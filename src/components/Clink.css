@@ -1,0 +1,145 @@
+.clink {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    position: relative;
+    background-color: #bbed2f;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+.clink_content {
+    flex: 0 0 60%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.image {
+    display: flex;
+    flex: 0 0 40%;
+    max-width: 30%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 12%;
+    border-bottom-right-radius: 12%;
+    object-fit: cover;
+}
+
+.text_card {
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 10%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.text_card h3 {
+    font-style: italic;
+}
+
+
+.successes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.app, .partners {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+.app ul {
+    list-style:disc;
+}
+
+.app h3 {
+    font-size: x-large;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.partners img {
+    max-height: 100px;
+    margin: 10px;
+    max-width: 80%;
+    width: 100%;
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.partners img:hover {
+    transform: scale(110%);
+}
+
+.partners h3  {
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+
+.clink_logo img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+
+    width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .clink {
+        flex-direction: column;
+    }
+
+    .image {
+        flex: 0 0 auto;
+        max-width: 70%;
+    }
+
+    .clink_content {
+        flex: 0 0 auto;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .successes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .partners img {
+        max-width: 100%;
+        margin: 5px auto;
+    }
+
+    .clink_logo img {
+        top: 10px;
+        right: 10px;
+    }
+}
+

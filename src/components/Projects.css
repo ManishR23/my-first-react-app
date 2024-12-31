@@ -1,0 +1,57 @@
+.projects {
+    background-color: #eaeaea;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    padding: 5%;
+    gap: 5%;
+}
+
+.project-card {
+    flex: 1;
+    height: auto;
+    width: auto;
+    padding: 2.5%;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-style: italic;
+    font-weight: normal;
+    font-size: x-large;
+    text-align: left;
+}
+
+.project-card h4 {
+    font-size: large;
+}
+
+.project-card u1 {
+    font-size: large;
+}
+
+.project-card img {
+    max-width: 30%;
+}
+
+.skills-list {
+    text-align: left;
+}
+

@@ -1,0 +1,59 @@
+.home {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-text {
+    padding: 5%;
+    flex: 1;
+}
+
+.profile-text h1 {
+    font-size: 85px;
+    color: #e0e0e0;
+    flex: 1
+}
+
+.profile-text p {
+    font-size: 35px;
+}
+
+
+.profile-image img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+}
+
+
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #bbed2f;
+    color: #121212;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 5%;
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+
+}
+
+.button h3 {
+    font-size: 24px;
+}
+
+.button:hover {
+    background-color: #e0e0e0;
+    transform: scale(105%);
+}

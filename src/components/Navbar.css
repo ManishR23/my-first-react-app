@@ -1,0 +1,82 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1%;
+    padding-left: 1%;
+
+    background-color: #282c34;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+
+    gap: 5%
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+
+.nav-links li {
+    font-style: default;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #61dafb;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown-menu {
+    border-radius: 10%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+}
+
+.nav-links li:hover .dropdown-menu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    transition: background-color 0.3s ease;
+    background-color: #282c34;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-menu li:hover {
+    background-color: #61dafb;
+}
+
+.dropdown-menu a:hover {
+    color: white;
+}
+
+
+
